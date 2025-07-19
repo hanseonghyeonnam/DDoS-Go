@@ -11,25 +11,22 @@
 
 ---
 
-## 📋 Table of Contents
-- [✨ Features](#✨-features)
-- [⚙️ Installation](#⚙️-installation)
-- [🚀 Usage](#🚀-usage)
-- [🔧 Options](#🔧-options)
-- [💡 Examples](#💡-examples)
-- [⚠️ Disclaimer](#⚠️-disclaimer)
-- [📄 License](#📄-license)
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [License](#license)
 
 ---
 
-## ✨ Features
-- Sends high-rate HTTP GET requests to a single URL per second  
-- Lightweight and user-friendly CLI interface  
-- Leverages Go goroutines for high-concurrency performance  
+## Features
+- Sends high-rate HTTP GET requests to a single URL per second
+- Lightweight and user-friendly CLI interface
+- Leverages Go goroutines for high-concurrency performance
 
-## ⚙️ Installation
+## Installation
 1. Install Go 1.18 or higher  
-2. Clone this repository:
+2. Clone this repository:  
    ```bash
    git clone https://github.com/hanseonghyeonnam/DDoS-Go.git
    cd DDoS-Go
+
