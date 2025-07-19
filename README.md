@@ -48,18 +48,25 @@
 | `-url`     | Target URL to attack                | Yes      | http://localhost:3000       |
 | `-DPS`     | Requests per second (DPS)           | Yes      | 10/S                             |
 
+
+## Supporting Protocols
+ | Procotol | Supporting |
+ | -------- | ---------- |
+ | `http`   |     Y      |
+ | `https`  |     N      |
+ | `ETC` |     N      |
 ## Examples
 
-1. Send 50 requests per second to `https://example.com`:
+1. Send 50 requests per second to `http://example.com`:
 
    ```bash
-   ./dgo -url https://example.com -DPS 50/s
+   ./dgo -url http://example.com -DPS 50/s
    ```
 
 2. Set a 10-second timeout per request:
 
    ```bash
-   ./dgo -url https://example.com -DPS 10/s
+   ./dgo -url http://example.com -DPS 10/s
    ```
 
 ## Disclaimer
