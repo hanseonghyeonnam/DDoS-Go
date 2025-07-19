@@ -5,6 +5,7 @@ import (
 	"flag"
 	"log/slog"
 	"fmt"
+	"strings"
 )
 
 type Settings struct {
@@ -40,11 +41,15 @@ func main() {
 	// Log startup
 	ShowBanner()
 	fmt.Printf("\n")
-	fmt.Printf("\033[31mWARNING. THIS DDoS CLI ARE CREATED, AND DESGINED FOR EDUCATION, OR DDoS PROTECTION TEST. DO NOT USE FOR OTHER REASON.\033[0m\n\n")
+	fmt.Printf("\033[31mTHIS CLI TOOL IS DESIGNED & CREATED FOR EDUCATION. WE WILL NOT BE LIABLE FOR ABUSE OF THIS TOOL.\033[0m\n\n")
 
 	settings := Settings{
 		URL: *urlFlag,
 		DPS: *dpsFlag,
+	}
+
+	if ! strings.HasSuffix(settings.URL, "/") {
+		settings.URL = settings.URL + "/"
 	}
 
 	if err := ddos.Run(settings.URL, settings.DPS); err != nil {
