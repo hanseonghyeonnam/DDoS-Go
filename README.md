@@ -45,8 +45,8 @@
 
 | Option     | Description                         | Required | Default |
 | ---------- | ----------------------------------- | -------- | ------- |
-| `-url`     | Target URL to attack                | Yes      | "http://localhost:3000"       |
-| `-dps`     | Requests per second (DPS)           | Yes      | "10/S"                             |
+| `-url`     | Target URL to attack                | Yes      | http://localhost:3000       |
+| `-dps`     | Requests per second (DPS)           | Yes      | 10/S                             |
 
 ## Examples
 
