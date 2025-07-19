@@ -5,7 +5,7 @@ The DDoS tool for Go language.
 
 ## Usage
 1. Build the project.
-   ```fish
+   ```shell
    go build .
    ```
 2. Run!
