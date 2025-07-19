@@ -38,7 +38,7 @@
 ## Usage
 
 ```bash
-./dgo -url <TARGET_URL> -dps <REQUESTS_PER_SECOND>
+./dgo -url <TARGET_URL> -DPS <REQUESTS_PER_SECOND>
 ```
 
 ## Options
@@ -46,20 +46,20 @@
 | Option     | Description                         | Required | Default |
 | ---------- | ----------------------------------- | -------- | ------- |
 | `-url`     | Target URL to attack                | Yes      | http://localhost:3000       |
-| `-dps`     | Requests per second (DPS)           | Yes      | 10/S                             |
+| `-DPS`     | Requests per second (DPS)           | Yes      | 10/S                             |
 
 ## Examples
 
 1. Send 50 requests per second to `https://example.com`:
 
    ```bash
-   ./dgo -url https://example.com -dps 50
+   ./dgo -url https://example.com -DPS 50/s
    ```
 
 2. Set a 10-second timeout per request:
 
    ```bash
-   ./dgo -url https://example.com -dps 100 -timeout 10
+   ./dgo -url https://example.com -DPS 10/s
    ```
 
 ## Disclaimer
