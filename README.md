@@ -9,6 +9,7 @@ The DDoS tool for Go language.
    go build .
    ```
 2. Run!
+ >  ./dgo [options]
 
 ## Options
   - -url, set the url that will attacked.
